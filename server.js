@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'rderock')));
 
 // Conexión a MongoDB
-mongoose.connect('mongodb+srv://ismel386827:M0ng02005$@suscriptores.fgeoe.mongodb.net/')
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log('Conectado a MongoDB'))
   .catch((err) => console.error('Error al conectar a MongoDB', err));
 
@@ -37,8 +37,8 @@ const Subscriber = mongoose.model('Subscriber', subscriberSchema);
 const transporter = nodemailer.createTransport({
   service: 'gmail', // o tu servicio de correo preferido
   auth: {
-    user: 'ismel386827@gmail.com',
-    pass: 'Matematicas1$'
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS
   }
 });
 

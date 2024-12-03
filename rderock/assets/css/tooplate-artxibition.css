@@ -3591,7 +3591,7 @@ CSS Stefan secciones
 }
 
 .imagenseccion img {
-  width: 100%;
+  width: 90%;
   display: block;
 }
 
@@ -3678,6 +3678,13 @@ CSS RESPONSIVE SECCIONES
   .dropdown {
       position: static;
   }
+}
+.card .container {
+  display: flex; /* Habilitar flexbox */
+  flex-direction: column; /* Alinear los elementos verticalmente */
+  justify-content: center; /* Centrar los elementos verticalmente */
+  align-items: center; /* Centrar los elementos horizontalmente */
+  text-align: center; /* Centrar el texto */
 }
 
 

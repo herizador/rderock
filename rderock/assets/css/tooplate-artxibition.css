@@ -3592,7 +3592,6 @@ CSS Stefan secciones
 
 .imagenseccion img {
   width: 100%;
-  display: block;
 }
 
 .imagenseccion:hover {

@@ -109,13 +109,14 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <fieldset>
-                    <input class="input-field" name="email" type="email" id="email" placeholder="Tu Email*" required="">
+                    <input name="email" type="email" id="email" placeholder="Tu Email*" required maxlength="100"
+                      pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
                   </fieldset>
                 </div>
                 <div class="col-md-6 col-sm-12">
                   <fieldset>
-                    <input class="input-field" name="phone" type="tel" id="phone-number" placeholder="Teléfono*"
-                      required="">
+                    <input name="phone" type="tel" id="phone-number" placeholder="Número de teléfono*" required
+                      maxlength="9" pattern="[0-9]{9}" title="El número debe contener 9 dígitos.">
                   </fieldset>
                 </div>
                 <div class="col-md-6 col-sm-12">

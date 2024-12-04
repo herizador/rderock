@@ -3697,4 +3697,140 @@ CSS RESPONSIVE SECCIONES
   text-align: center; /* Centrar el texto */
 }
 
+/* Fondo degradado azul oscuro */
+.animated-form {
+  background: linear-gradient(to bottom, #000000, #002b5e);
+  border: 1px solid #002b5e;
+  padding: 30px;
+  border-radius: 20px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  animation: slide-down 0.8s ease-in-out; /* Animación inicial */
+}
+
+/* Animación de despliegue */
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo de las pestañas */
+.tab-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 10px 15px;
+  text-align: center;
+  background: #002b5e;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  background: #00509e;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tab-button:hover {
+  background: #003d80;
+}
+
+/* Contenedor de las secciones */
+.tab-content {
+  display: none;
+  animation: fade-in 0.5s ease-in-out;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Animación de transición */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Campos del formulario */
+.input-field {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #00407a;
+  border-radius: 5px;
+  background: #ffffff;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+/* Hover en los campos */
+.input-field:hover {
+  border-color: #00509e;
+  transform: scale(1.02);
+}
+
+.input-field:focus {
+  border-color: #00509e;
+  box-shadow: 0 0 5px #00509e;
+}
+
+/* Botón */
+.main-button {
+  padding: 12px 20px;
+  background: #002b5e;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.main-button:hover {
+  background: #003d80;
+  transform: scale(1.05);
+}
+
+/* Título animado */
+.clase h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  animation: text-bounce 1s ease infinite alternate;
+}
+
+/* Efecto rebote en el título */
+@keyframes text-bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
 
